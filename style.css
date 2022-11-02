@@ -1,0 +1,252 @@
+body{
+    margin: 0px;
+    padding: 0px;
+ 
+
+
+}#one{
+    position:absolute;
+  background-color:red;
+  color:white;
+  top:40px;
+  padding: 1px;
+  left:-30px;
+  font-size: 16px;
+  width:150px;
+  transform:rotate(-45deg);
+  text-align:center;
+}#two{
+    position:absolute;
+  background-color:red;
+  color:white;
+  top:20px;
+  padding: 2px;
+  right:-30px;
+  font-size: 15px ;
+  width:160px;
+  transform:rotate(45deg);
+  text-align:center;
+}
+#kuks{
+    line-height:60px;
+  font-size:50px;
+  font-family: Apple Chancery;
+  padding: 0 50px;
+  color: white;
+  letter-spacing:4px;
+  text-shadow:2px 2px 5px;
+}
+.h1{
+  text-shadow:2px 2px 5px rgb(108, 81, 153);
+  color:rgb(102, 84, 84);
+}
+.main{
+
+    border: 5px dotted black;
+    box-shadow: 1px 2px 7px 9px grey;;
+}
+img{
+    box-shadow: 1px 2px 7px 9px grey;
+    border-radius: 50px;
+}
+img:hover{
+zoom: 80%;
+box-shadow: 2px 3px 7px 9px rgb(140, 129, 129);
+cursor: pointer;
+}
+#root{
+    margin: 0px;
+    padding: 0px;
+    background-color: rgba(0, 0, 0, 0.692);
+    height: 70px;
+    color: rgb(255, 255, 255);
+   text-align: center;
+  font-size: 70px;
+}
+
+#navbar{
+    height: 50px;
+    background-color: rgb(83, 72, 72);
+    justify-content:center;
+    position:relative;
+    color: beige;
+  background-color:black;
+  box-shadow: -2px -2px 5px white,2px -2px 5px white;
+}
+  #navbar > nav {
+    width:100%;
+    display:flex;
+    max-height:60px;
+  }
+  #navbar > nav > ul {
+    margin:0;
+    paddding:0;
+  color: white;
+    font-size: 19px;
+    list-style-type:none;
+    display:flex;
+    position:absolute;
+      right:50px;
+  /*   min-width:60%; */
+  }
+  #navbar > nav > ul > li {
+    line-height:60px;
+    margin: 0 0px;
+    
+    padding:0;
+    text-align:center;
+    display:inline-block;
+    
+  /*   background-color:green; */
+    min-width:120px;
+  
+  } 
+  #navbar > nav > ul > li > a {
+    position:relative;
+  /*   background-color:red; */
+    margin: 0 20px;
+      color:white;
+  }
+  #navbar > nav > ul > li:hover {
+    border-bottom: 2px solid white;
+    background-color: #0088ff;
+  }
+  #navbar > nav > ul > .dropdown:hover {
+    border-bottom:none;
+  }
+  #navbar > nav > ul > .dropdown:hover >  .dd
+  {
+    display:block;
+  }
+  .dropdown:hover > a .fa-caret-down {
+    display:none;
+  }
+  a {
+    text-decoration:none;
+  
+  }
+  
+  #navbar > nav > ul > li > div {
+    position:absolute;
+    padding: 0 10px;
+    
+    background-color:black;
+    display:none;
+    background-color:aliceblue;
+    min-width:100px;
+  }
+  
+  #navbar > nav > ul > li > div > ul {
+    margin:0px 0 10px 0;
+    padding:0;
+    list-style:none;
+  }
+  #u_a_c {
+    position:relative;
+    width:100%;
+  /*   background-color:red; */
+  }
+  #up_arrow {
+    position:relative;
+    width:20px;
+    height:20px;
+    left:42%;
+    top:-10px;
+    background-color:aliceblue;
+    transform:rotate(45deg);
+  }
+  #navbar > nav > ul > li> div > ul > li:hover {
+    background-color:rgba(0,0,0,0.2);
+  }
+  #navbar > nav > ul > li > div > ul > li > a {
+    padding : 5px;
+      color:black;
+  }
+
+
+.xyz{
+    text-align: center;
+}
+
+
+
+/*
+footer
+*/
+
+
+.inner-footer{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(37, 36, 36);
+}
+ 
+.social-links{
+    display: flex;
+}
+
+.social-links ul{
+    padding: 10px;
+    display: flex;
+    width: 300px;
+    height: 30px;
+    margin: auto;
+    
+}
+
+.social-items{
+    list-style: none;
+}
+
+.social-items a{
+    padding: 10px 20px;
+    font-size: 35px;
+    color: aqua;
+    transition: all .25s;
+
+}
+.social-items a:hover{
+    color: rgb(65, 181, 181);
+}
+
+.quick-links{
+    display: flex;
+    justify-content:center;
+    margin: auto;
+}
+.quick-links ul{
+    display: flex;
+}
+
+.quick-items{
+    list-style: none;
+}
+
+.quick-items a{
+   text-decoration: none;
+   padding: 15px;
+   font-size: 18px;
+   color: white;
+   transition: all .25s;
+}
+
+.quick-items a:hover{
+    color: aqua;
+}
+
+
+.outer-footer{
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    background-color: #3f3f3f;
+
+}
+
+
+
+
+
+/* cards css*/
+

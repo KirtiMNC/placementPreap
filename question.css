@@ -1,0 +1,150 @@
+
+.list{
+    font-size: 18px;
+
+}
+.list li{
+    font-weight: bold;
+}.btn{
+    padding: 7px;
+    margin:20px;
+
+}
+.btnr{ color:white;
+    padding: 5px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 20px;
+    font-size: 25px;
+    background-color: rgb(25, 25, 133);
+    box-shadow: 6px 8px 6px 4px rgb(146, 141, 229) ;
+
+}
+.btns{ color:white;
+    padding: 3px;
+    border: none;
+    margin-left: 20px;
+    border-radius: 20px;
+    font-size: 25px;
+    background-color: rgb(216, 64, 82);
+    box-shadow: 6px 8px 6px 4px rgb(228, 19, 47) ;
+
+}
+/*footer*/
+
+
+.inner-footer{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(37, 36, 36);
+}
+ 
+.social-links{
+    display: flex;
+}
+
+.social-links ul{
+    padding: 10px;
+    display: flex;
+    width: 300px;
+    height: 30px;
+    margin: auto;
+    
+}
+
+.social-items{
+    list-style: none;
+}
+
+.social-items a{
+    padding: 10px 20px;
+    font-size: 35px;
+    color: aqua;
+    transition: all .25s;
+
+}
+.social-items a:hover{
+    color: rgb(65, 181, 181);
+}
+
+.quick-links{
+    display: flex;
+    justify-content:center;
+    margin: auto;
+}
+.quick-links ul{
+    display: flex;
+}
+
+.quick-items{
+    list-style: none;
+}
+
+.quick-items a{
+   text-decoration: none;
+   padding: 15px;
+   font-size: 18px;
+   color: white;
+   transition: all .25s;
+}
+
+.quick-items a:hover{
+    color: aqua;
+}
+
+
+.outer-footer{
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    background-color: #3f3f3f;
+
+}
+
+
+
+
+
+
+/* radio button css*/
+
+  
+  
+  /* MAIN */
+  /* =============================================== */
+  .rad-label {
+    display: flex;
+    align-items: center;
+  
+    border-radius: 100px;
+    padding: 4px 6px;
+    margin: 5px 0;
+  
+    cursor: pointer;
+    transition: .3s;
+  }
+
+
+  /* buttons css 2*/
+.container{
+    height: 22px;
+ 
+}
+
+#Reset2{
+  position: absolute;
+  left: 580px;
+  cursor: pointer;
+
+}
+ 
+
+#submit2{
+    position: absolute;
+    left: 680px;
+    cursor: pointer;
+    
+    }  
+  
+ 

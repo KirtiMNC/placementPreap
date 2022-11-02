@@ -1,0 +1,97 @@
+*{
+    margin: 0px;
+    padding:0px;
+}h1{
+    text-decoration:underline;
+}
+.cent{
+    text-align: center;
+}
+#lg-box{
+    
+height: 300px;
+background-color: rgb(170, 166, 166);
+box-shadow: 1px 2px 3px 4px ;
+border: dotted;
+padding:20px;
+margin-left: 20%;
+margin-right: 20%;
+margin-top: 75px;
+margin-bottom: 75px;
+text-align: center;
+color:rgb(157, 7, 7);
+
+}
+.left{
+    display:grid;
+    margin: 5px;
+    padding: 2px;
+    width:300px;
+    float: left;
+
+}
+.right{
+    display:grid;
+    text-align: center;
+    width:300px;
+    float: right;
+    margin: 2px;
+}
+input{
+    font-size: 20px;
+    margin: 5px;
+    padding: 7px;
+    border-radius: 10px;
+    border: none;
+}
+#signUp{
+    background-color: green;
+    font-size: 20px;
+    border-radius: 50px;
+    color: white;
+    border: none;
+    box-shadow: 1px 2px 3px 4px;
+    cursor: pointer;
+
+}#logIn{
+    
+    background-color: rgba(48, 97, 187, 0.686);
+    font-size: 20px;
+    border-radius: 50px;
+    color: white;
+    cursor: pointer;
+    border: none;
+    box-shadow: 1px 2px 3px 4px;
+}
+.fb{
+background-color: rgb(50, 50, 253);
+color:white;
+margin: 7px;
+padding: 7px;
+border-radius: 10px;
+font-size: 20px;
+border: none;
+box-shadow: 1px 2px 3px 4px;
+}
+.twitter{
+    
+background-color: hwb(0 0% 0% / 0.885);
+color:white;
+margin: 5px;
+padding: 7px;
+border: none;
+box-shadow: 1px 2px 3px 4px;
+border-radius: 10px;
+font-size: 20px;
+
+}
+.ge{
+    background-color: #077916ab;
+    color:white;
+    margin: 5px;
+    border: none;
+    padding: 7px;
+    box-shadow: 1px 2px 3px 4px;
+    border-radius: 10px;
+    font-size: 20px;
+    }

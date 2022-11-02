@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+.cen{ 
+    text-align: center;
+}
+.cards{
+    width: 17%;
+    background-color: rgb(226, 213, 213);
+    border-radius: 5px;
+    display:inline-block;
+    height: 420px;
+    box-shadow: 25px 20px 15px 10px rgb(142, 134, 134);
+    margin-top: 40px ;
+    margin-bottom: 25px ;
+    margin-right: 50px;
+    border: 20px solid grey;
+}
+.image img{
+    margin: 10px;
+    width: 70%;
+}
+.tittle{
+    text-align: center;
+}
+.des{
+    font-size: 17px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+button{
+    margin-top:20px ;
+    margin-bottom: 20px;
+    background-color: rgb(37, 35, 35);
+    box-shadow: 1px 2px 3px 4px rgb(30, 29, 29);
+    border: none;
+    color: white;
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 5px;
+}
+button:hover{
+    font-size: 20px;
+    box-shadow: inset;
+    text-shadow: 2px 3px 4px;
+    background-color: rgb(9, 1, 1);
+    color: rgb(218, 208, 208);
+    transition: .5s;
+}
+
+
+
+#root{
+    margin: 0px;
+    padding: 0px;
+    background-color: rgba(0, 0, 0, 0.692);
+    height: 70px;
+    color: rgb(255, 255, 255);
+   text-align: center;
+  font-size: 70px;
+}
+
+#nav{
+    height: 50px;
+    background-color: rgb(83, 72, 72);
+    color: white;
+    justify-content:center;
+   
+  
+}
+
+
+.xyz{
+    margin-left: 430px;
+}
+
+
+
+/*
+footer
+*/
+
+
+.inner-footer{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(37, 36, 36);
+}
+ 
+.social-links{
+    display: flex;
+}
+
+.social-links ul{
+    padding: 10px;
+    display: flex;
+    width: 300px;
+    height: 30px;
+    margin: auto;
+    
+}
+
+.social-items{
+    list-style: none;
+}
+
+.social-items a{
+    padding: 10px 20px;
+    font-size: 35px;
+    color: aqua;
+    transition: all .25s;
+
+}
+.social-items a:hover{
+    color: rgb(65, 181, 181);
+}
+
+.quick-links{
+    display: flex;
+    justify-content:center;
+    margin: auto;
+}
+.quick-links ul{
+    display: flex;
+}
+
+.quick-items{
+    list-style: none;
+}
+
+.quick-items a{
+   text-decoration: none;
+   padding: 15px;
+   font-size: 18px;
+   color: white;
+   transition: all .25s;
+}
+
+.quick-items a:hover{
+    color: aqua;
+}
+
+
+.outer-footer{
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    background-color: #3f3f3f;
+
+}

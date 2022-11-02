@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bg.css">
+    <link rel="stylesheet" href="style.css">
+    <title>KUKS Quiz Solving site</title>
+</head>
+<body>
+  
+  <div id="root" class="root">
+    <div id="kuks">
+        AUHSPP
+    </div>
+</div>
+<div id="one">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  AMITY</div>  
+<div id="two"><b>&nbsp;&nbsp;  UNIVERSITY</b></div>
+<div  id="nav" class="nav">
+  <div id="navbar">
+      <nav>
+
+
+          <ul>
+              <li>Skills:</li>
+          <li class="dropdown"><a style="background-color: brown;" href="#">Programming  &nbsp;<i class="fa fa-caret-down"></i> </a>
+           <div class="dd">
+             <div id="u_a_c"><div id="up_arrow"></div></div>
+            <ul>
+              
+              <li><a href="#">JAVA</a></li>
+              <li><a href="#">Python</a></li>
+              <li><a href="#">C++</a></li>
+            </ul></li>
+            <li class="dropdown"><a style="background-color: brown;"  href="#">Aptitude &nbsp;<i class="fa fa-caret-down"></i> </a>
+             <div class="dd">
+               <div id="u_a_c"><div id="up_arrow"></div></div>
+              <ul>
+                
+                <li><a href="#">Mathematical</a></li>
+                <li><a href="#">Logical</a></li>
+                <li><a href="#">Verbal</a></li>
+              </ul>
+            </li>
+            <li class="dropdown"><a style="background-color: brown;" href="#">DSA &nbsp;<i class="fa fa-caret-down"></i> </a>
+             <div class="dd">
+               <div id="u_a_c"><div id="up_arrow"></div></div>
+              <ul>
+                
+                <li><a href="#">DS</a></li>
+                <li><a href="#">Algorithm</a></li>
+              </ul>
+              </div>
+          </ul>
+        </nav>
+  </div>
+</div>
+    <div id="lg-box">
+        <h1 style="font-size: 40px;margin-left:70px;margin-bottom: 40px;"><i>Registered Account </i></h1>
+        <div class="left">
+
+             <input type="text" id="email" name="email" placeholder="E-mail"/>
+            <input type="password" id="password" name="password" placeholder="Password"/>
+            <input type="submit" id="logIn" name="login_submit" value="LogIn"/>
+        </div>
+    
+
+        <div class="right">
+            <button class="fb">Login with facebook</button>
+            <button class="twitter">Login with Twittter</button>
+            <button class="ge">Login with Google</button>
+        </div>
+    </div>
+    
+<footer class="footer">
+  <div class="inner-footer">
+      <div class="social-links">
+          <ul>
+              <li class="social-items"><a href="#"></a></li>
+              <li class="social-items"><a href="#"></a></li>
+              <li class="social-items"><a href="#"></a></li>
+              <li class="social-items"><a href="#"></a></li>
+              <li class="social-items"><a href="#"></a></li>
+          </ul>
+      </div>
+      <div class="quick-links">
+          <ul>
+              <li class="quick-items"><a href="#">Home</a></li>
+              <li class="quick-items"><a href="#">About us</a></li>
+              <li class="quick-items"><a href="#">Company</a></li>
+              <li class="quick-items"><a href="#">Career</a></li>
+              <li class="quick-items"><a href="#">Contact us</a></li>
+              <li class="quick-items"><a href="#">Privacy Policy</a></li>
+              <li class="quick-items"><a href="#">Terms of services</a></li>
+          </ul>
+      </div>
+  </div>
+  <div class="outer-footer">
+      Copyright &copy; AUHSPP All Rights Reserved
+  </div>
+
+</footer>   
+</body>
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.4/firebase-app.js";
+    import { getDatabase,set,ref,update } from "https://www.gstatic.com/firebasejs/9.9.4/firebase-database.js";
+    import { getAuth, signInWithEmailAndPassword,onAuthStateChanged,signOut} from "https://www.gstatic.com/firebasejs/9.9.4/firebase-auth.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyAAnidaGrMtexgerSEH0b_Fk8eYAxPo290",
+      authDomain: "kuks-9c3c6.firebaseapp.com",
+      databaseURL: "https://kuks-9c3c6-default-rtdb.firebaseio.com",
+      projectId: "kuks-9c3c6",
+      storageBucket: "kuks-9c3c6.appspot.com",
+      messagingSenderId: "14729349549",
+      appId: "1:14729349549:web:301308a3c428a228f03924"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const database=getDatabase(app);
+    const auth = getAuth();
+
+  
+    logIn.addEventListener('click',(e)=>{
+        var email=document.getElementById('email').value;
+        var password=document.getElementById('password').value;
+
+        signInWithEmailAndPassword(auth, email, password)
+  .then((userCredential) => {
+    // Signed in 
+    const user = userCredential.user;
+
+    const dt=new Date();
+    update(ref(database,'users/'+user.uid),{
+        last_login:dt,
+    })
+    
+    logIn.onclick=window.open('home.html');
+   
+
+    // ...
+  })
+  .catch((error) => {
+    const errorCode = error.code;
+    const errorMessage = error.message;
+
+    
+    alert(errorMessage);
+  });
+
+    });
+    
+const user = auth.currentUser;
+    onAuthStateChanged(auth, (user) => {
+  if (user) {
+    // User is signed in, see docs for a list of available properties
+    // https://firebase.google.com/docs/reference/js/firebase.User
+    const uid = user.uid;
+    // ...
+  } else {
+    // User is signed out
+    // ...
+  }
+});
+logout.addEventListener('click',(e)=>{
+
+signOut(auth).then(() => {
+  // Sign-out successful.
+  alert('Sign out');
+}).catch((error) => {
+  // An error happened.
+  const errorCode = error.code;
+    const errorMessage = error.message;
+
+    
+    alert(errorMessage);
+
+});
+});
+  </script>
+</html>
